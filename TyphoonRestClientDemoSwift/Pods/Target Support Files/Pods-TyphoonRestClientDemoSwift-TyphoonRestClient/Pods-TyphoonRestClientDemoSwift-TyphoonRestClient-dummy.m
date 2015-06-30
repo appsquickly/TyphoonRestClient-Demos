@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TyphoonRestClientDemoSwift_TyphoonRestClient : NSObject
+@end
+@implementation PodsDummy_Pods_TyphoonRestClientDemoSwift_TyphoonRestClient
+@end

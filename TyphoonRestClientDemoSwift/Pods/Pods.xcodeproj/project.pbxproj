@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0047BA7AD74677C72D3EC8CA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBE19B5C82D3B17372EABAA /* AFNetworkActivityIndicatorManager.m */; };
+		00EC41063E8A9ABFC08067EE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D720817642B97E517EFBCE9 /* AFSecurityPolicy.m */; };
+		069A048E874A44274989DE68 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C61DFD116AE23BE4C7D67BB /* UIKit+AFNetworking.h */; };
+		0A54D94D9A128E91169E8397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999B5EE5203C6896045D99A /* Foundation.framework */; };
+		11D744CD78A3549755CC0680 /* TRCSerializerPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF37CD6D7EEE4CE68AB58BB /* TRCSerializerPlist.m */; };
+		14CB7031E3330ECD3344F44E /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B145145B957389F7D1C781E /* UIWebView+AFNetworking.h */; };
+		14E061E8F43A8A9C2C8AD3DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A27D9B715E1FE19EC7C69E /* MobileCoreServices.framework */; };
+		185AD54C21E8F27956CA019A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA4B352F1993CE077EE9FD8 /* SystemConfiguration.framework */; };
+		1CBF961ACE3F2587163CF842 /* TRCConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC7D09F64E85F9AB4BA9651 /* TRCConverter.h */; };
+		1EE439DE4FA78CA7753CFB2B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FA2D72C70DF563BE793042 /* AFURLResponseSerialization.m */; };
+		2000BB1FF05323740ED91F43 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9347B52FF53B7F2BBE8C4F /* AFHTTPRequestOperationManager.h */; };
+		224FF9718E81EDC2AA4CA114 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B14D3C2EE3D8DE0507B8321 /* AFURLResponseSerialization.h */; };
+		2558E77E8DD5CA246EE4B2AF /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AE926D480603F99D4BBAA484 /* UIImageView+AFNetworking.h */; };
+		26C26C428C0C32FEC1807742 /* TRCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20F912592A0A8231C49EDD /* TRCUtils.m */; };
+		27798C461D43FDB65C40FB9D /* TRCSerializerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 870739FEE03FC0B12DE8AD23 /* TRCSerializerImage.m */; };
+		28A40D461A2BC5068782A053 /* TRCSchemaStackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4A125247E612C65FFC66A3 /* TRCSchemaStackTrace.h */; };
+		29D99DF688EB0BA019AE0BBE /* TRCSchemaStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = E86A78F3ABB570D16C67E23E /* TRCSchemaStackTrace.m */; };
+		2C1E959E03D97F27F6EFD47E /* TRCValueTransformerString.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE86A9A3A2140DFAB40173 /* TRCValueTransformerString.m */; };
+		2C7CB2D2DEA107B123F7CD0F /* TRCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 026AD2EE8723DFB944C83D5D /* TRCConnection.h */; };
+		2CB18E9FB800656E27E0FFBD /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A528FF6B8010451E1F60904 /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m */; };
+		2E2394A8BA922E8FE173F20F /* TRCSchemeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7968DC00423201C86EA864 /* TRCSchemeFactory.m */; };
+		30FD54789EBDF7F3C6F7ADA2 /* TRCConnectionStub.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B53E6D77F29918E13855 /* TRCConnectionStub.m */; };
+		3304ACCD6A7E298A0C7C0B5F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BC01A7E0606220BBE0AC7 /* AFURLSessionManager.m */; };
+		34A43FBA61B3787FB9FE9944 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A109FDF96A7DECD7ABAE43 /* UIProgressView+AFNetworking.m */; };
+		375583C65960ADD34BF77518 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D379DE54BA0EAF1619674DC /* AFHTTPRequestOperation.h */; };
+		3F11DD3D817EF689BDA76C78 /* TRCConnectionStub.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F3C5BD5A7DE06FCC836663 /* TRCConnectionStub.h */; };
+		3FADE7A94D9F5BE790EEB103 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8915B163DE5C2C94B4E02F /* UIButton+AFNetworking.m */; };
+		40085F06B117454F82F35209 /* TRCBuiltInObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = F344A97688B0334B22A3044D /* TRCBuiltInObjects.h */; };
+		43BE7341E99E86F797ECD795 /* TRCSchemaDataValueOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8069B45EF4AAC91F99F2EF18 /* TRCSchemaDataValueOptions.h */; };
+		44E2E7CE1C5509DA1355DD5F /* TRCConvertersRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 033275C742BACF5903E5BB16 /* TRCConvertersRegistry.h */; };
+		4AA0447A4935E98D0489A2DE /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1A92EC8A47DE99FDD60123 /* UIAlertView+AFNetworking.h */; };
+		4BCC4D5B54FC2F16F0443A1C /* TRCSchemaDataValueOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59748BAA6721AFFD42EFA5F8 /* TRCSchemaDataValueOptions.m */; };
+		4DB2B74655BD5A1EE7582EEC /* TRCSerializerJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 817DDDFFA791123664DE0375 /* TRCSerializerJson.m */; };
+		4E113355809AC3EAB7A0EEE1 /* TRCObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFEAB727B596B239F992D35 /* TRCObjectMapper.h */; };
+		4E42627A450ED01188573D39 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67E98150B83948FE2D0A24 /* AFURLConnectionOperation.m */; };
+		4F1BC66C5114CB6B83FB729D /* TRCConnectionLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 563C0399B537AA9B3C4D62E2 /* TRCConnectionLogger.h */; };
+		50A19045FDA43EDB76F8D04C /* Pods-TyphoonRestClientDemoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A59B775C5CAD1FCBA0B38CD2 /* Pods-TyphoonRestClientDemoSwift-dummy.m */; };
+		57CE48BD451CAB7105762722 /* TyphoonRestClientErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CE848D4757A4CEC825F291 /* TyphoonRestClientErrors.h */; };
+		58E249F9F7B716D9CA229E0B /* TRCSerializerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7BFCBD2D76C9458969F145 /* TRCSerializerData.h */; };
+		597A9DC520F78045E44FEBAB /* TRCConnectionLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA1B6C629EA9FA87C3F1FA /* TRCConnectionLogger.m */; };
+		5AA70D1C32D0B7BD6DEAA022 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A253AC68986AD3757D4EA7 /* UIWebView+AFNetworking.m */; };
+		5CBFC09C7BADE0A486B77F3A /* TyphoonRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D866BE8FA932EA2E35DDCF /* TyphoonRestClient.m */; };
+		628CE229A9E70B080C88A52A /* TRCInfrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 419B44251E824260DC16EF6F /* TRCInfrastructure.h */; };
+		62A1F4885B26FD817B6F4F17 /* TRCValueTransformerNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 00EEC127462BE0B5855A2FFF /* TRCValueTransformerNumber.h */; };
+		661B1567E12A9A974492A8BC /* TRCSerializerInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2916FE093C99248C5E3DE2 /* TRCSerializerInputStream.m */; };
+		667601D462BFCDA5D6DF4E33 /* TRCErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5BB849A0CB1A15F3BC101E /* TRCErrorHandler.h */; };
+		6C848F4304C13BE0DCF847AF /* TRCSerializerData.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D08E3D13097E9468D744EF /* TRCSerializerData.m */; };
+		6D563B115DC95E1A36F57E63 /* TRCSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD561934A81D4F58D4B68A1 /* TRCSchema.m */; };
+		7172B3F522FBED28EF829E0C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E1128C0F37B5B1C24E8D2 /* AFURLRequestSerialization.m */; };
+		747B600DB7B5EF8088E9E2EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999B5EE5203C6896045D99A /* Foundation.framework */; };
+		76A87221E57DE7F4D7DE19BE /* TRCConnectionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C00CA5A8C0A9EF7F9CA107 /* TRCConnectionProxy.m */; };
+		7C2A87E873F66CD04161EFF8 /* TRCSchemaDictionaryData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D76B938A442FA245EFF2330 /* TRCSchemaDictionaryData.h */; };
+		7F30EDE63ADD1A33E2F8D1FB /* TRCSerializerPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D93191E3F8CAD77E7547B0C /* TRCSerializerPlist.h */; };
+		82D6F32FBCBE11CFC3E6A02B /* TRCSerializerHttpQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E76EBDE91F2782BC99C20007 /* TRCSerializerHttpQuery.h */; };
+		8310DF54CC9C0F7B61ED2300 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE984C7C8809EAD609A1A74 /* CoreGraphics.framework */; };
+		843E08396A46773B8DE90A53 /* TRCValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B1EF27E9AC2AB3C5BFEBC9 /* TRCValueTransformer.h */; };
+		920F347EB9EE1E1AED09BEF0 /* TRCSchemaDictionaryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4722202F5D7C07E95E00D7 /* TRCSchemaDictionaryData.m */; };
+		940FEA04A2E65FE38BB9F9D2 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D40455BBAB31062A60C7562 /* AFNetworkReachabilityManager.h */; };
+		95F152C2B4A456F3C61DEE92 /* TRCSerializerHttpQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111A4AE8BE99174AD5E005A /* TRCSerializerHttpQuery.m */; };
+		9701886F9FA3F01598EB1FF8 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE4F452A2286EDFBC5AA023 /* AFSecurityPolicy.h */; };
+		9D535A7488953C58D81196EA /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1E0398D23B7F239AE7DFFE /* UIActivityIndicatorView+AFNetworking.h */; };
+		9E46DDCCD1610F73DEBBF764 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 718A9C52CE2A2FEAD832E312 /* UIRefreshControl+AFNetworking.m */; };
+		9FF597C0789B2C5AA9CCFCB5 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B696702B36C7DE358DCE277F /* AFNetworking.h */; };
+		A2C3C88919EFD4E39367F8B4 /* TRCSerializerString.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE16B147F5B4F97C9FDFEE2 /* TRCSerializerString.h */; };
+		A319C80EC1A3DABC51834CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999B5EE5203C6896045D99A /* Foundation.framework */; };
+		A395A9620D8D671939F54AAD /* TRCValueTransformerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1BE9EB8A47A683EB4CEE5 /* TRCValueTransformerNumber.m */; };
+		A6460A4FBA0686AB075C0A7B /* Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 063F61B0B94463B8FB8216F8 /* Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m */; };
+		A79211471423C03867ED26B4 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A4094416065270BF1E36E568 /* AFURLConnectionOperation.h */; };
+		A89418B472CBB94DA7BFC9F2 /* TRCPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = C067E461A9D5CF0B60803237 /* TRCPostProcessor.h */; };
+		A9B6D275CFB52C3D04A425F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83ECA81B2511CEB5CAC25FE /* Security.framework */; };
+		ADC737717197F169031617F0 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 114C928EBBA2CC5DD44ECCC9 /* UIProgressView+AFNetworking.h */; };
+		AE980EE5E172E1354FE365F0 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D62A0A297A52A57B69FE395 /* UIRefreshControl+AFNetworking.h */; };
+		B29F7F631DA3152C2672AD5C /* TRCValueTransformerString.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A28FE60BEAC43A27541C4D /* TRCValueTransformerString.h */; };
+		B4FADFE849B539EBEA8D2A85 /* TRCSchemeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D8A876487B54D021671DFFEA /* TRCSchemeFactory.h */; };
+		B99479E4E7E2EC953349F2D4 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26435408567BDCF3278399 /* UIAlertView+AFNetworking.m */; };
+		BED1606DE9CD710230DD4720 /* TRCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF505F0A661168F1D11E17E /* TRCRequest.h */; };
+		C083B6233CBCAFE9F38E798D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE17470DACB8B08273716C9 /* AFHTTPSessionManager.m */; };
+		C0859D2AF9F6092CD01ECB38 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18808D0BF6EBA62F7C4FF12C /* AFURLSessionManager.h */; };
+		C2E5C2BAFE6BC8EBADDDDD2A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F122E5AB181FDC000D7EADE /* AFNetworkActivityIndicatorManager.h */; };
+		C338890EFA9729F837CA335F /* TRCConnectionAFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DD056113918E9FC95DC84C /* TRCConnectionAFNetworking.h */; };
+		C475DA66144F8771C4FF5B7E /* TRCSerializerString.m in Sources */ = {isa = PBXBuildFile; fileRef = 791C3F1AE4B2FE9BD6FACC47 /* TRCSerializerString.m */; };
+		C62800479E1DBB8BBEC4ECE3 /* TRCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 671936499B5A41436A4CAB4F /* TRCUtils.h */; };
+		CAEC59509CEA8FA86454FEAD /* TRCSerializerInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 332685F715119F255C49ABDC /* TRCSerializerInputStream.h */; };
+		D00C6518669F0C4F9CA3EA91 /* TRCConnectionAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F31F84E52B2FEA52ADFCA3A8 /* TRCConnectionAFNetworking.m */; };
+		D285C393CD93F20E71A5953B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE23337DE2E075A60176AB /* UIActivityIndicatorView+AFNetworking.m */; };
+		D480C1D553726EAB0D1F6CF9 /* TRCSchemaData.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D388BA23976782217DDAE1 /* TRCSchemaData.h */; };
+		D70C8E5BDC0A5D08522F1950 /* TRCConnectionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5335E46188CE4BEA62715646 /* TRCConnectionProxy.h */; };
+		D77F8DBFB38230AF5B7B67D8 /* TRCSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 4063DED2B2802A86F9BE5740 /* TRCSchema.h */; };
+		D7809C24937D382204E09359 /* TRCSerializerImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8814B1CE9A4840A74D848E /* TRCSerializerImage.h */; };
+		DE2888592B5C54B5DAD54DD9 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBC47C25229345BA242D743 /* UIButton+AFNetworking.h */; };
+		DE875E16920898627E9DE689 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 475F12DEAA31EDE5341713D6 /* UIImageView+AFNetworking.m */; };
+		E047E075BFED0C2C8C2848A4 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E64DF02A303ED8D45E23FC03 /* AFURLRequestSerialization.h */; };
+		E32186B170908A729293E358 /* TyphoonRestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D1C1DC1C50E95B7E4C1A84 /* TyphoonRestClient.h */; };
+		E963C8F697D3CFB2BDAF2AF5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C147DA7A0FED51E90DC33 /* AFNetworkReachabilityManager.m */; };
+		E96C138BB28C3268BB511295 /* TRCConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C27AD3FBCC9EC764AF467 /* TRCConverter.m */; };
+		EB357D0FDBE845DB130F87BF /* TRCSerializerJson.h in Headers */ = {isa = PBXBuildFile; fileRef = DF23D1A9015D75BB52289B2D /* TRCSerializerJson.h */; };
+		EE904A75AF3F5CCA2A43FE00 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F82727FB8B3ACC8F0D2888DC /* AFHTTPRequestOperation.m */; };
+		EF533BE7C84C95EBE979443A /* TRCValueTransformerUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C3F96874685F3F89BA4E9 /* TRCValueTransformerUrl.m */; };
+		F497B2B9F8CE51B0F893689A /* TRCValueTransformerUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D841539B73779D49EC51C /* TRCValueTransformerUrl.h */; };
+		F8FEC149761AFB04D7CF6CDF /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C04FC8D597473CA3E1563E /* AFHTTPSessionManager.h */; };
+		FFB2D22D509D8CCA05EAA106 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D47051BFD3AF3B825E2FBFF /* AFHTTPRequestOperationManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2956751453E24516242E9970 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C120F2BF264C40FF80ACA61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C771A811CD80B31515C800E;
+			remoteInfo = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient";
+		};
+		93D5CE8553488CA4E3C8EA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C120F2BF264C40FF80ACA61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7A076885DB73BD4B4BCA4E;
+			remoteInfo = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+		};
+		980E4675C16B8096E47075D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C120F2BF264C40FF80ACA61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7A076885DB73BD4B4BCA4E;
+			remoteInfo = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AE86A9A3A2140DFAB40173 /* TRCValueTransformerString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCValueTransformerString.m; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerString.m; sourceTree = "<group>"; };
+		00EEC127462BE0B5855A2FFF /* TRCValueTransformerNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCValueTransformerNumber.h; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerNumber.h; sourceTree = "<group>"; };
+		026AD2EE8723DFB944C83D5D /* TRCConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConnection.h; path = TyphoonRestClient/Protocols/TRCConnection.h; sourceTree = "<group>"; };
+		033275C742BACF5903E5BB16 /* TRCConvertersRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConvertersRegistry.h; path = TyphoonRestClient/Internal/Converter/TRCConvertersRegistry.h; sourceTree = "<group>"; };
+		063F61B0B94463B8FB8216F8 /* Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		07A27D9B715E1FE19EC7C69E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		0C7968DC00423201C86EA864 /* TRCSchemeFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSchemeFactory.m; path = TyphoonRestClient/Internal/SchemeFactory/TRCSchemeFactory.m; sourceTree = "<group>"; };
+		0C9C147DA7A0FED51E90DC33 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0D76B938A442FA245EFF2330 /* TRCSchemaDictionaryData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchemaDictionaryData.h; path = TyphoonRestClient/Extras/SchemeDatas/Dictionary/TRCSchemaDictionaryData.h; sourceTree = "<group>"; };
+		0D7C27AD3FBCC9EC764AF467 /* TRCConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCConverter.m; path = TyphoonRestClient/Internal/Converter/TRCConverter.m; sourceTree = "<group>"; };
+		0EC7D09F64E85F9AB4BA9651 /* TRCConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConverter.h; path = TyphoonRestClient/Internal/Converter/TRCConverter.h; sourceTree = "<group>"; };
+		114C928EBBA2CC5DD44ECCC9 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		18808D0BF6EBA62F7C4FF12C /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		18EB1198A2C10AAE03D96FA7 /* Pods-TyphoonRestClientDemoSwift-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TyphoonRestClientDemoSwift-environment.h"; sourceTree = "<group>"; };
+		1F7BFCBD2D76C9458969F145 /* TRCSerializerData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerData.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerData.h; sourceTree = "<group>"; };
+		1FE2606D861E2AA4D84556B6 /* Pods-TyphoonRestClientDemoSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TyphoonRestClientDemoSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		25D1C1DC1C50E95B7E4C1A84 /* TyphoonRestClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonRestClient.h; path = TyphoonRestClient/TyphoonRestClient.h; sourceTree = "<group>"; };
+		28F26993A7B226B6ABE85072 /* Pods-TyphoonRestClientDemoSwift-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		290062247B4F38A859E5D3A8 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2A528FF6B8010451E1F60904 /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m"; sourceTree = "<group>"; };
+		2B14D3C2EE3D8DE0507B8321 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		2C5BC01A7E0606220BBE0AC7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		2E8B329A03CB383550CE063F /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-Private.xcconfig"; sourceTree = "<group>"; };
+		332685F715119F255C49ABDC /* TRCSerializerInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerInputStream.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerInputStream.h; sourceTree = "<group>"; };
+		35A253AC68986AD3757D4EA7 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		3926120F0A00F4809C1011F3 /* Pods-TyphoonRestClientDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		3D379DE54BA0EAF1619674DC /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		3FF37CD6D7EEE4CE68AB58BB /* TRCSerializerPlist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerPlist.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerPlist.m; sourceTree = "<group>"; };
+		4063DED2B2802A86F9BE5740 /* TRCSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchema.h; path = TyphoonRestClient/Internal/Scheme/TRCSchema.h; sourceTree = "<group>"; };
+		419B44251E824260DC16EF6F /* TRCInfrastructure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCInfrastructure.h; path = TyphoonRestClient/Protocols/Infrastructure/TRCInfrastructure.h; sourceTree = "<group>"; };
+		475F12DEAA31EDE5341713D6 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		4953EA5F7D9F1B3CEFD6739A /* Pods-TyphoonRestClientDemoSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TyphoonRestClientDemoSwift-resources.sh"; sourceTree = "<group>"; };
+		4F122E5AB181FDC000D7EADE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		5335E46188CE4BEA62715646 /* TRCConnectionProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConnectionProxy.h; path = TyphoonRestClient/Extras/Connections/TRCConnectionProxy.h; sourceTree = "<group>"; };
+		563C0399B537AA9B3C4D62E2 /* TRCConnectionLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConnectionLogger.h; path = TyphoonRestClient/Extras/Connections/TRCConnectionLogger.h; sourceTree = "<group>"; };
+		59748BAA6721AFFD42EFA5F8 /* TRCSchemaDataValueOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSchemaDataValueOptions.m; path = TyphoonRestClient/Internal/Scheme/Data/TRCSchemaDataValueOptions.m; sourceTree = "<group>"; };
+		598D841539B73779D49EC51C /* TRCValueTransformerUrl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCValueTransformerUrl.h; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerUrl.h; sourceTree = "<group>"; };
+		5B145145B957389F7D1C781E /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		5B65492622B858F57B3C16B7 /* libPods-TyphoonRestClientDemoSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyphoonRestClientDemoSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C61DFD116AE23BE4C7D67BB /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		5E4722202F5D7C07E95E00D7 /* TRCSchemaDictionaryData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSchemaDictionaryData.m; path = TyphoonRestClient/Extras/SchemeDatas/Dictionary/TRCSchemaDictionaryData.m; sourceTree = "<group>"; };
+		5FE4F452A2286EDFBC5AA023 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		65C04FC8D597473CA3E1563E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		671936499B5A41436A4CAB4F /* TRCUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCUtils.h; path = TyphoonRestClient/Internal/Utils/TRCUtils.h; sourceTree = "<group>"; };
+		6BE17470DACB8B08273716C9 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6CE16B147F5B4F97C9FDFEE2 /* TRCSerializerString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerString.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerString.h; sourceTree = "<group>"; };
+		6D8915B163DE5C2C94B4E02F /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		718A9C52CE2A2FEAD832E312 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		76ABCD188E07B23823015E6C /* Pods-TyphoonRestClientDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		791C3F1AE4B2FE9BD6FACC47 /* TRCSerializerString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerString.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerString.m; sourceTree = "<group>"; };
+		7AEE23337DE2E075A60176AB /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		7D62A0A297A52A57B69FE395 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		8069B45EF4AAC91F99F2EF18 /* TRCSchemaDataValueOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchemaDataValueOptions.h; path = TyphoonRestClient/Internal/Scheme/Data/TRCSchemaDataValueOptions.h; sourceTree = "<group>"; };
+		8111A4AE8BE99174AD5E005A /* TRCSerializerHttpQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerHttpQuery.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerHttpQuery.m; sourceTree = "<group>"; };
+		817DDDFFA791123664DE0375 /* TRCSerializerJson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerJson.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerJson.m; sourceTree = "<group>"; };
+		870739FEE03FC0B12DE8AD23 /* TRCSerializerImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerImage.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerImage.m; sourceTree = "<group>"; };
+		889A83226072DC253AB24E0D /* Pods-TyphoonRestClientDemoSwift-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		8B5921EB501E2E6F1341C386 /* libPods-TyphoonRestClientDemoSwift-TyphoonRestClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyphoonRestClientDemoSwift-TyphoonRestClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D47051BFD3AF3B825E2FBFF /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		8D720817642B97E517EFBCE9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		8D93191E3F8CAD77E7547B0C /* TRCSerializerPlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerPlist.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerPlist.h; sourceTree = "<group>"; };
+		8E67E98150B83948FE2D0A24 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		8EA4B352F1993CE077EE9FD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		8F2916FE093C99248C5E3DE2 /* TRCSerializerInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerInputStream.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerInputStream.m; sourceTree = "<group>"; };
+		8FBA1B6C629EA9FA87C3F1FA /* TRCConnectionLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCConnectionLogger.m; path = TyphoonRestClient/Extras/Connections/TRCConnectionLogger.m; sourceTree = "<group>"; };
+		95FA2D72C70DF563BE793042 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9999B5EE5203C6896045D99A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		99A109FDF96A7DECD7ABAE43 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		9D1A92EC8A47DE99FDD60123 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		9D40455BBAB31062A60C7562 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9DFEAB727B596B239F992D35 /* TRCObjectMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCObjectMapper.h; path = TyphoonRestClient/Protocols/TRCObjectMapper.h; sourceTree = "<group>"; };
+		9E4A125247E612C65FFC66A3 /* TRCSchemaStackTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchemaStackTrace.h; path = TyphoonRestClient/Internal/Scheme/TRCSchemaStackTrace.h; sourceTree = "<group>"; };
+		A173EA4F1ACE995971F68022 /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient.xcconfig"; sourceTree = "<group>"; };
+		A1CE848D4757A4CEC825F291 /* TyphoonRestClientErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonRestClientErrors.h; path = TyphoonRestClient/TyphoonRestClientErrors.h; sourceTree = "<group>"; };
+		A4094416065270BF1E36E568 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A59B775C5CAD1FCBA0B38CD2 /* Pods-TyphoonRestClientDemoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TyphoonRestClientDemoSwift-dummy.m"; sourceTree = "<group>"; };
+		AAB053FC54BA361597F25645 /* Pods-TyphoonRestClientDemoSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TyphoonRestClientDemoSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AAE984C7C8809EAD609A1A74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		AC8814B1CE9A4840A74D848E /* TRCSerializerImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerImage.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerImage.h; sourceTree = "<group>"; };
+		AE926D480603F99D4BBAA484 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		AF26435408567BDCF3278399 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		B696702B36C7DE358DCE277F /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		B7D84CA4D0357D1D1AE6BD44 /* Pods-TyphoonRestClientDemoSwift-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TyphoonRestClientDemoSwift-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		BDD561934A81D4F58D4B68A1 /* TRCSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSchema.m; path = TyphoonRestClient/Internal/Scheme/TRCSchema.m; sourceTree = "<group>"; };
+		C067E461A9D5CF0B60803237 /* TRCPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCPostProcessor.h; path = TyphoonRestClient/Protocols/TRCPostProcessor.h; sourceTree = "<group>"; };
+		C20E1128C0F37B5B1C24E8D2 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C2D08E3D13097E9468D744EF /* TRCSerializerData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSerializerData.m; path = TyphoonRestClient/Extras/Serializations/TRCSerializerData.m; sourceTree = "<group>"; };
+		C520CE7560D6614298DE6DBF /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-prefix.pch"; sourceTree = "<group>"; };
+		C5C00CA5A8C0A9EF7F9CA107 /* TRCConnectionProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCConnectionProxy.m; path = TyphoonRestClient/Extras/Connections/TRCConnectionProxy.m; sourceTree = "<group>"; };
+		C6DD056113918E9FC95DC84C /* TRCConnectionAFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConnectionAFNetworking.h; path = TyphoonRestClient/Extras/Connections/TRCConnectionAFNetworking.h; sourceTree = "<group>"; };
+		CC5BB849A0CB1A15F3BC101E /* TRCErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCErrorHandler.h; path = TyphoonRestClient/Protocols/TRCErrorHandler.h; sourceTree = "<group>"; };
+		CC9347B52FF53B7F2BBE8C4F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CEF7B53E6D77F29918E13855 /* TRCConnectionStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCConnectionStub.m; path = TyphoonRestClient/Extras/Connections/TRCConnectionStub.m; sourceTree = "<group>"; };
+		D4D388BA23976782217DDAE1 /* TRCSchemaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchemaData.h; path = TyphoonRestClient/Protocols/Infrastructure/TRCSchemaData.h; sourceTree = "<group>"; };
+		D5A28FE60BEAC43A27541C4D /* TRCValueTransformerString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCValueTransformerString.h; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerString.h; sourceTree = "<group>"; };
+		D6F3C5BD5A7DE06FCC836663 /* TRCConnectionStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCConnectionStub.h; path = TyphoonRestClient/Extras/Connections/TRCConnectionStub.h; sourceTree = "<group>"; };
+		D8A876487B54D021671DFFEA /* TRCSchemeFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSchemeFactory.h; path = TyphoonRestClient/Internal/SchemeFactory/TRCSchemeFactory.h; sourceTree = "<group>"; };
+		DA1E0398D23B7F239AE7DFFE /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		DF23D1A9015D75BB52289B2D /* TRCSerializerJson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerJson.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerJson.h; sourceTree = "<group>"; };
+		E5E1BE9EB8A47A683EB4CEE5 /* TRCValueTransformerNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCValueTransformerNumber.m; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerNumber.m; sourceTree = "<group>"; };
+		E64DF02A303ED8D45E23FC03 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		E76EBDE91F2782BC99C20007 /* TRCSerializerHttpQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCSerializerHttpQuery.h; path = TyphoonRestClient/Extras/Serializations/TRCSerializerHttpQuery.h; sourceTree = "<group>"; };
+		E83ECA81B2511CEB5CAC25FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		E86A78F3ABB570D16C67E23E /* TRCSchemaStackTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCSchemaStackTrace.m; path = TyphoonRestClient/Internal/Scheme/TRCSchemaStackTrace.m; sourceTree = "<group>"; };
+		E9B1EF27E9AC2AB3C5BFEBC9 /* TRCValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCValueTransformer.h; path = TyphoonRestClient/Protocols/TRCValueTransformer.h; sourceTree = "<group>"; };
+		EA1C3F96874685F3F89BA4E9 /* TRCValueTransformerUrl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCValueTransformerUrl.m; path = TyphoonRestClient/Extras/DataConverters/TRCValueTransformerUrl.m; sourceTree = "<group>"; };
+		F1D866BE8FA932EA2E35DDCF /* TyphoonRestClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonRestClient.m; path = TyphoonRestClient/TyphoonRestClient.m; sourceTree = "<group>"; };
+		F31F84E52B2FEA52ADFCA3A8 /* TRCConnectionAFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCConnectionAFNetworking.m; path = TyphoonRestClient/Extras/Connections/TRCConnectionAFNetworking.m; sourceTree = "<group>"; };
+		F344A97688B0334B22A3044D /* TRCBuiltInObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCBuiltInObjects.h; path = TyphoonRestClient/Internal/Utils/TRCBuiltInObjects.h; sourceTree = "<group>"; };
+		F82727FB8B3ACC8F0D2888DC /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		FB20F912592A0A8231C49EDD /* TRCUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TRCUtils.m; path = TyphoonRestClient/Internal/Utils/TRCUtils.m; sourceTree = "<group>"; };
+		FCF5E3182AA712F9FE645D41 /* libPods-TyphoonRestClientDemoSwift-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyphoonRestClientDemoSwift-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC47C25229345BA242D743 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		FEBE19B5C82D3B17372EABAA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		FEF505F0A661168F1D11E17E /* TRCRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRCRequest.h; path = TyphoonRestClient/Protocols/TRCRequest.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7CAACC99A344C2EA1600D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8310DF54CC9C0F7B61ED2300 /* CoreGraphics.framework in Frameworks */,
+				0A54D94D9A128E91169E8397 /* Foundation.framework in Frameworks */,
+				14E061E8F43A8A9C2C8AD3DF /* MobileCoreServices.framework in Frameworks */,
+				A9B6D275CFB52C3D04A425F8 /* Security.framework in Frameworks */,
+				185AD54C21E8F27956CA019A /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FEB07C6BAE7DBD7173CBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747B600DB7B5EF8088E9E2EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5567CA54D70DDDCA431A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A319C80EC1A3DABC51834CAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06523A83128F05FE6820717D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A173EA4F1ACE995971F68022 /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient.xcconfig */,
+				2E8B329A03CB383550CE063F /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-Private.xcconfig */,
+				2A528FF6B8010451E1F60904 /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m */,
+				C520CE7560D6614298DE6DBF /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TyphoonRestClientDemoSwift-TyphoonRestClient";
+			sourceTree = "<group>";
+		};
+		0891F11F8A664164B8D8806E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B65492622B858F57B3C16B7 /* libPods-TyphoonRestClientDemoSwift.a */,
+				FCF5E3182AA712F9FE645D41 /* libPods-TyphoonRestClientDemoSwift-AFNetworking.a */,
+				8B5921EB501E2E6F1341C386 /* libPods-TyphoonRestClientDemoSwift-TyphoonRestClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F1B4E6F748913F69DCB34B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28F26993A7B226B6ABE85072 /* Pods-TyphoonRestClientDemoSwift-AFNetworking.xcconfig */,
+				889A83226072DC253AB24E0D /* Pods-TyphoonRestClientDemoSwift-AFNetworking-Private.xcconfig */,
+				063F61B0B94463B8FB8216F8 /* Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m */,
+				B7D84CA4D0357D1D1AE6BD44 /* Pods-TyphoonRestClientDemoSwift-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TyphoonRestClientDemoSwift-AFNetworking";
+			sourceTree = "<group>";
+		};
+		11F97A43A39F5871847D9653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686DBD4875CF2EE342EF9A03 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		337A93C0D73995620B869962 /* Pods-TyphoonRestClientDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AAB053FC54BA361597F25645 /* Pods-TyphoonRestClientDemoSwift-acknowledgements.markdown */,
+				1FE2606D861E2AA4D84556B6 /* Pods-TyphoonRestClientDemoSwift-acknowledgements.plist */,
+				A59B775C5CAD1FCBA0B38CD2 /* Pods-TyphoonRestClientDemoSwift-dummy.m */,
+				18EB1198A2C10AAE03D96FA7 /* Pods-TyphoonRestClientDemoSwift-environment.h */,
+				4953EA5F7D9F1B3CEFD6739A /* Pods-TyphoonRestClientDemoSwift-resources.sh */,
+				76ABCD188E07B23823015E6C /* Pods-TyphoonRestClientDemoSwift.debug.xcconfig */,
+				3926120F0A00F4809C1011F3 /* Pods-TyphoonRestClientDemoSwift.release.xcconfig */,
+			);
+			name = "Pods-TyphoonRestClientDemoSwift";
+			path = "Target Support Files/Pods-TyphoonRestClientDemoSwift";
+			sourceTree = "<group>";
+		};
+		5C5D90A146E50FF9D9BFE97A /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				65C04FC8D597473CA3E1563E /* AFHTTPSessionManager.h */,
+				6BE17470DACB8B08273716C9 /* AFHTTPSessionManager.m */,
+				18808D0BF6EBA62F7C4FF12C /* AFURLSessionManager.h */,
+				2C5BC01A7E0606220BBE0AC7 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		5CB621CEFD03B3B20026D0E0 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				5FE4F452A2286EDFBC5AA023 /* AFSecurityPolicy.h */,
+				8D720817642B97E517EFBCE9 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		686DBD4875CF2EE342EF9A03 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAE984C7C8809EAD609A1A74 /* CoreGraphics.framework */,
+				9999B5EE5203C6896045D99A /* Foundation.framework */,
+				07A27D9B715E1FE19EC7C69E /* MobileCoreServices.framework */,
+				E83ECA81B2511CEB5CAC25FE /* Security.framework */,
+				8EA4B352F1993CE077EE9FD8 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		714455B244FD7CC53C9F7288 = {
+			isa = PBXGroup;
+			children = (
+				290062247B4F38A859E5D3A8 /* Podfile */,
+				11F97A43A39F5871847D9653 /* Frameworks */,
+				7E59613C506C5E0A6C4C1EF6 /* Pods */,
+				0891F11F8A664164B8D8806E /* Products */,
+				ECBC015DA8484B0A2A513531 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E59613C506C5E0A6C4C1EF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A9D9BE7BE7994D5D9906771 /* AFNetworking */,
+				C37AF6962484E95040A85BF8 /* TyphoonRestClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A9D9BE7BE7994D5D9906771 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B696702B36C7DE358DCE277F /* AFNetworking.h */,
+				FCBBD7DAD360609F7D7A77F9 /* NSURLConnection */,
+				5C5D90A146E50FF9D9BFE97A /* NSURLSession */,
+				B4885C35501B8100D74B5868 /* Reachability */,
+				5CB621CEFD03B3B20026D0E0 /* Security */,
+				D4DD04C9E522EF83CBAAA9A6 /* Serialization */,
+				0F1B4E6F748913F69DCB34B9 /* Support Files */,
+				B2714C45AAEE4AF45DB5EF21 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B2714C45AAEE4AF45DB5EF21 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4F122E5AB181FDC000D7EADE /* AFNetworkActivityIndicatorManager.h */,
+				FEBE19B5C82D3B17372EABAA /* AFNetworkActivityIndicatorManager.m */,
+				DA1E0398D23B7F239AE7DFFE /* UIActivityIndicatorView+AFNetworking.h */,
+				7AEE23337DE2E075A60176AB /* UIActivityIndicatorView+AFNetworking.m */,
+				9D1A92EC8A47DE99FDD60123 /* UIAlertView+AFNetworking.h */,
+				AF26435408567BDCF3278399 /* UIAlertView+AFNetworking.m */,
+				FDBC47C25229345BA242D743 /* UIButton+AFNetworking.h */,
+				6D8915B163DE5C2C94B4E02F /* UIButton+AFNetworking.m */,
+				AE926D480603F99D4BBAA484 /* UIImageView+AFNetworking.h */,
+				475F12DEAA31EDE5341713D6 /* UIImageView+AFNetworking.m */,
+				5C61DFD116AE23BE4C7D67BB /* UIKit+AFNetworking.h */,
+				114C928EBBA2CC5DD44ECCC9 /* UIProgressView+AFNetworking.h */,
+				99A109FDF96A7DECD7ABAE43 /* UIProgressView+AFNetworking.m */,
+				7D62A0A297A52A57B69FE395 /* UIRefreshControl+AFNetworking.h */,
+				718A9C52CE2A2FEAD832E312 /* UIRefreshControl+AFNetworking.m */,
+				5B145145B957389F7D1C781E /* UIWebView+AFNetworking.h */,
+				35A253AC68986AD3757D4EA7 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		B4885C35501B8100D74B5868 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9D40455BBAB31062A60C7562 /* AFNetworkReachabilityManager.h */,
+				0C9C147DA7A0FED51E90DC33 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		C37AF6962484E95040A85BF8 /* TyphoonRestClient */ = {
+			isa = PBXGroup;
+			children = (
+				F344A97688B0334B22A3044D /* TRCBuiltInObjects.h */,
+				026AD2EE8723DFB944C83D5D /* TRCConnection.h */,
+				C6DD056113918E9FC95DC84C /* TRCConnectionAFNetworking.h */,
+				F31F84E52B2FEA52ADFCA3A8 /* TRCConnectionAFNetworking.m */,
+				563C0399B537AA9B3C4D62E2 /* TRCConnectionLogger.h */,
+				8FBA1B6C629EA9FA87C3F1FA /* TRCConnectionLogger.m */,
+				5335E46188CE4BEA62715646 /* TRCConnectionProxy.h */,
+				C5C00CA5A8C0A9EF7F9CA107 /* TRCConnectionProxy.m */,
+				D6F3C5BD5A7DE06FCC836663 /* TRCConnectionStub.h */,
+				CEF7B53E6D77F29918E13855 /* TRCConnectionStub.m */,
+				0EC7D09F64E85F9AB4BA9651 /* TRCConverter.h */,
+				0D7C27AD3FBCC9EC764AF467 /* TRCConverter.m */,
+				033275C742BACF5903E5BB16 /* TRCConvertersRegistry.h */,
+				CC5BB849A0CB1A15F3BC101E /* TRCErrorHandler.h */,
+				419B44251E824260DC16EF6F /* TRCInfrastructure.h */,
+				9DFEAB727B596B239F992D35 /* TRCObjectMapper.h */,
+				C067E461A9D5CF0B60803237 /* TRCPostProcessor.h */,
+				FEF505F0A661168F1D11E17E /* TRCRequest.h */,
+				4063DED2B2802A86F9BE5740 /* TRCSchema.h */,
+				BDD561934A81D4F58D4B68A1 /* TRCSchema.m */,
+				D4D388BA23976782217DDAE1 /* TRCSchemaData.h */,
+				8069B45EF4AAC91F99F2EF18 /* TRCSchemaDataValueOptions.h */,
+				59748BAA6721AFFD42EFA5F8 /* TRCSchemaDataValueOptions.m */,
+				0D76B938A442FA245EFF2330 /* TRCSchemaDictionaryData.h */,
+				5E4722202F5D7C07E95E00D7 /* TRCSchemaDictionaryData.m */,
+				9E4A125247E612C65FFC66A3 /* TRCSchemaStackTrace.h */,
+				E86A78F3ABB570D16C67E23E /* TRCSchemaStackTrace.m */,
+				D8A876487B54D021671DFFEA /* TRCSchemeFactory.h */,
+				0C7968DC00423201C86EA864 /* TRCSchemeFactory.m */,
+				1F7BFCBD2D76C9458969F145 /* TRCSerializerData.h */,
+				C2D08E3D13097E9468D744EF /* TRCSerializerData.m */,
+				E76EBDE91F2782BC99C20007 /* TRCSerializerHttpQuery.h */,
+				8111A4AE8BE99174AD5E005A /* TRCSerializerHttpQuery.m */,
+				AC8814B1CE9A4840A74D848E /* TRCSerializerImage.h */,
+				870739FEE03FC0B12DE8AD23 /* TRCSerializerImage.m */,
+				332685F715119F255C49ABDC /* TRCSerializerInputStream.h */,
+				8F2916FE093C99248C5E3DE2 /* TRCSerializerInputStream.m */,
+				DF23D1A9015D75BB52289B2D /* TRCSerializerJson.h */,
+				817DDDFFA791123664DE0375 /* TRCSerializerJson.m */,
+				8D93191E3F8CAD77E7547B0C /* TRCSerializerPlist.h */,
+				3FF37CD6D7EEE4CE68AB58BB /* TRCSerializerPlist.m */,
+				6CE16B147F5B4F97C9FDFEE2 /* TRCSerializerString.h */,
+				791C3F1AE4B2FE9BD6FACC47 /* TRCSerializerString.m */,
+				671936499B5A41436A4CAB4F /* TRCUtils.h */,
+				FB20F912592A0A8231C49EDD /* TRCUtils.m */,
+				E9B1EF27E9AC2AB3C5BFEBC9 /* TRCValueTransformer.h */,
+				00EEC127462BE0B5855A2FFF /* TRCValueTransformerNumber.h */,
+				E5E1BE9EB8A47A683EB4CEE5 /* TRCValueTransformerNumber.m */,
+				D5A28FE60BEAC43A27541C4D /* TRCValueTransformerString.h */,
+				00AE86A9A3A2140DFAB40173 /* TRCValueTransformerString.m */,
+				598D841539B73779D49EC51C /* TRCValueTransformerUrl.h */,
+				EA1C3F96874685F3F89BA4E9 /* TRCValueTransformerUrl.m */,
+				25D1C1DC1C50E95B7E4C1A84 /* TyphoonRestClient.h */,
+				F1D866BE8FA932EA2E35DDCF /* TyphoonRestClient.m */,
+				A1CE848D4757A4CEC825F291 /* TyphoonRestClientErrors.h */,
+				06523A83128F05FE6820717D /* Support Files */,
+			);
+			path = TyphoonRestClient;
+			sourceTree = "<group>";
+		};
+		D4DD04C9E522EF83CBAAA9A6 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E64DF02A303ED8D45E23FC03 /* AFURLRequestSerialization.h */,
+				C20E1128C0F37B5B1C24E8D2 /* AFURLRequestSerialization.m */,
+				2B14D3C2EE3D8DE0507B8321 /* AFURLResponseSerialization.h */,
+				95FA2D72C70DF563BE793042 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		ECBC015DA8484B0A2A513531 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				337A93C0D73995620B869962 /* Pods-TyphoonRestClientDemoSwift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FCBBD7DAD360609F7D7A77F9 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				3D379DE54BA0EAF1619674DC /* AFHTTPRequestOperation.h */,
+				F82727FB8B3ACC8F0D2888DC /* AFHTTPRequestOperation.m */,
+				CC9347B52FF53B7F2BBE8C4F /* AFHTTPRequestOperationManager.h */,
+				8D47051BFD3AF3B825E2FBFF /* AFHTTPRequestOperationManager.m */,
+				A4094416065270BF1E36E568 /* AFURLConnectionOperation.h */,
+				8E67E98150B83948FE2D0A24 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A5DC6E57118D2E601D7D03D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40085F06B117454F82F35209 /* TRCBuiltInObjects.h in Headers */,
+				2C7CB2D2DEA107B123F7CD0F /* TRCConnection.h in Headers */,
+				C338890EFA9729F837CA335F /* TRCConnectionAFNetworking.h in Headers */,
+				4F1BC66C5114CB6B83FB729D /* TRCConnectionLogger.h in Headers */,
+				D70C8E5BDC0A5D08522F1950 /* TRCConnectionProxy.h in Headers */,
+				3F11DD3D817EF689BDA76C78 /* TRCConnectionStub.h in Headers */,
+				1CBF961ACE3F2587163CF842 /* TRCConverter.h in Headers */,
+				44E2E7CE1C5509DA1355DD5F /* TRCConvertersRegistry.h in Headers */,
+				667601D462BFCDA5D6DF4E33 /* TRCErrorHandler.h in Headers */,
+				628CE229A9E70B080C88A52A /* TRCInfrastructure.h in Headers */,
+				4E113355809AC3EAB7A0EEE1 /* TRCObjectMapper.h in Headers */,
+				A89418B472CBB94DA7BFC9F2 /* TRCPostProcessor.h in Headers */,
+				BED1606DE9CD710230DD4720 /* TRCRequest.h in Headers */,
+				D77F8DBFB38230AF5B7B67D8 /* TRCSchema.h in Headers */,
+				D480C1D553726EAB0D1F6CF9 /* TRCSchemaData.h in Headers */,
+				43BE7341E99E86F797ECD795 /* TRCSchemaDataValueOptions.h in Headers */,
+				7C2A87E873F66CD04161EFF8 /* TRCSchemaDictionaryData.h in Headers */,
+				28A40D461A2BC5068782A053 /* TRCSchemaStackTrace.h in Headers */,
+				B4FADFE849B539EBEA8D2A85 /* TRCSchemeFactory.h in Headers */,
+				58E249F9F7B716D9CA229E0B /* TRCSerializerData.h in Headers */,
+				82D6F32FBCBE11CFC3E6A02B /* TRCSerializerHttpQuery.h in Headers */,
+				D7809C24937D382204E09359 /* TRCSerializerImage.h in Headers */,
+				CAEC59509CEA8FA86454FEAD /* TRCSerializerInputStream.h in Headers */,
+				EB357D0FDBE845DB130F87BF /* TRCSerializerJson.h in Headers */,
+				7F30EDE63ADD1A33E2F8D1FB /* TRCSerializerPlist.h in Headers */,
+				A2C3C88919EFD4E39367F8B4 /* TRCSerializerString.h in Headers */,
+				C62800479E1DBB8BBEC4ECE3 /* TRCUtils.h in Headers */,
+				843E08396A46773B8DE90A53 /* TRCValueTransformer.h in Headers */,
+				62A1F4885B26FD817B6F4F17 /* TRCValueTransformerNumber.h in Headers */,
+				B29F7F631DA3152C2672AD5C /* TRCValueTransformerString.h in Headers */,
+				F497B2B9F8CE51B0F893689A /* TRCValueTransformerUrl.h in Headers */,
+				E32186B170908A729293E358 /* TyphoonRestClient.h in Headers */,
+				57CE48BD451CAB7105762722 /* TyphoonRestClientErrors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFDB8A95C83804A4A8F349E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375583C65960ADD34BF77518 /* AFHTTPRequestOperation.h in Headers */,
+				2000BB1FF05323740ED91F43 /* AFHTTPRequestOperationManager.h in Headers */,
+				F8FEC149761AFB04D7CF6CDF /* AFHTTPSessionManager.h in Headers */,
+				C2E5C2BAFE6BC8EBADDDDD2A /* AFNetworkActivityIndicatorManager.h in Headers */,
+				940FEA04A2E65FE38BB9F9D2 /* AFNetworkReachabilityManager.h in Headers */,
+				9FF597C0789B2C5AA9CCFCB5 /* AFNetworking.h in Headers */,
+				9701886F9FA3F01598EB1FF8 /* AFSecurityPolicy.h in Headers */,
+				A79211471423C03867ED26B4 /* AFURLConnectionOperation.h in Headers */,
+				E047E075BFED0C2C8C2848A4 /* AFURLRequestSerialization.h in Headers */,
+				224FF9718E81EDC2AA4CA114 /* AFURLResponseSerialization.h in Headers */,
+				C0859D2AF9F6092CD01ECB38 /* AFURLSessionManager.h in Headers */,
+				9D535A7488953C58D81196EA /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				4AA0447A4935E98D0489A2DE /* UIAlertView+AFNetworking.h in Headers */,
+				DE2888592B5C54B5DAD54DD9 /* UIButton+AFNetworking.h in Headers */,
+				2558E77E8DD5CA246EE4B2AF /* UIImageView+AFNetworking.h in Headers */,
+				069A048E874A44274989DE68 /* UIKit+AFNetworking.h in Headers */,
+				ADC737717197F169031617F0 /* UIProgressView+AFNetworking.h in Headers */,
+				AE980EE5E172E1354FE365F0 /* UIRefreshControl+AFNetworking.h in Headers */,
+				14CB7031E3330ECD3344F44E /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		035FE1014DBD3C17A8686989 /* Pods-TyphoonRestClientDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC233534F943F54CDC761FB /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift" */;
+			buildPhases = (
+				4C7DE0304EB2851C68C089AB /* Sources */,
+				FB5567CA54D70DDDCA431A85 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BF9000371AC4B8BBEC925EE /* PBXTargetDependency */,
+				B26A9D1E31934409AFE83158 /* PBXTargetDependency */,
+			);
+			name = "Pods-TyphoonRestClientDemoSwift";
+			productName = "Pods-TyphoonRestClientDemoSwift";
+			productReference = 5B65492622B858F57B3C16B7 /* libPods-TyphoonRestClientDemoSwift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0C7A076885DB73BD4B4BCA4E /* Pods-TyphoonRestClientDemoSwift-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD93436479B815D632CB549F /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift-AFNetworking" */;
+			buildPhases = (
+				7166F532085366BB0A58996D /* Sources */,
+				EC7CAACC99A344C2EA1600D0 /* Frameworks */,
+				AEFDB8A95C83804A4A8F349E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+			productName = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+			productReference = FCF5E3182AA712F9FE645D41 /* libPods-TyphoonRestClientDemoSwift-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7C771A811CD80B31515C800E /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A0615143D2ABFDF5372848 /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient" */;
+			buildPhases = (
+				17E45567D16CDE668482BA18 /* Sources */,
+				F4FEB07C6BAE7DBD7173CBFD /* Frameworks */,
+				0A5DC6E57118D2E601D7D03D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A24F20101F74EEADEB52A697 /* PBXTargetDependency */,
+			);
+			name = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient";
+			productName = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient";
+			productReference = 8B5921EB501E2E6F1341C386 /* libPods-TyphoonRestClientDemoSwift-TyphoonRestClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C120F2BF264C40FF80ACA61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = DED61DE14DACB07C47A83858 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 714455B244FD7CC53C9F7288;
+			productRefGroup = 0891F11F8A664164B8D8806E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				035FE1014DBD3C17A8686989 /* Pods-TyphoonRestClientDemoSwift */,
+				0C7A076885DB73BD4B4BCA4E /* Pods-TyphoonRestClientDemoSwift-AFNetworking */,
+				7C771A811CD80B31515C800E /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17E45567D16CDE668482BA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB18E9FB800656E27E0FFBD /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-dummy.m in Sources */,
+				D00C6518669F0C4F9CA3EA91 /* TRCConnectionAFNetworking.m in Sources */,
+				597A9DC520F78045E44FEBAB /* TRCConnectionLogger.m in Sources */,
+				76A87221E57DE7F4D7DE19BE /* TRCConnectionProxy.m in Sources */,
+				30FD54789EBDF7F3C6F7ADA2 /* TRCConnectionStub.m in Sources */,
+				E96C138BB28C3268BB511295 /* TRCConverter.m in Sources */,
+				6D563B115DC95E1A36F57E63 /* TRCSchema.m in Sources */,
+				4BCC4D5B54FC2F16F0443A1C /* TRCSchemaDataValueOptions.m in Sources */,
+				920F347EB9EE1E1AED09BEF0 /* TRCSchemaDictionaryData.m in Sources */,
+				29D99DF688EB0BA019AE0BBE /* TRCSchemaStackTrace.m in Sources */,
+				2E2394A8BA922E8FE173F20F /* TRCSchemeFactory.m in Sources */,
+				6C848F4304C13BE0DCF847AF /* TRCSerializerData.m in Sources */,
+				95F152C2B4A456F3C61DEE92 /* TRCSerializerHttpQuery.m in Sources */,
+				27798C461D43FDB65C40FB9D /* TRCSerializerImage.m in Sources */,
+				661B1567E12A9A974492A8BC /* TRCSerializerInputStream.m in Sources */,
+				4DB2B74655BD5A1EE7582EEC /* TRCSerializerJson.m in Sources */,
+				11D744CD78A3549755CC0680 /* TRCSerializerPlist.m in Sources */,
+				C475DA66144F8771C4FF5B7E /* TRCSerializerString.m in Sources */,
+				26C26C428C0C32FEC1807742 /* TRCUtils.m in Sources */,
+				A395A9620D8D671939F54AAD /* TRCValueTransformerNumber.m in Sources */,
+				2C1E959E03D97F27F6EFD47E /* TRCValueTransformerString.m in Sources */,
+				EF533BE7C84C95EBE979443A /* TRCValueTransformerUrl.m in Sources */,
+				5CBFC09C7BADE0A486B77F3A /* TyphoonRestClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7DE0304EB2851C68C089AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A19045FDA43EDB76F8D04C /* Pods-TyphoonRestClientDemoSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7166F532085366BB0A58996D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE904A75AF3F5CCA2A43FE00 /* AFHTTPRequestOperation.m in Sources */,
+				FFB2D22D509D8CCA05EAA106 /* AFHTTPRequestOperationManager.m in Sources */,
+				C083B6233CBCAFE9F38E798D /* AFHTTPSessionManager.m in Sources */,
+				0047BA7AD74677C72D3EC8CA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				E963C8F697D3CFB2BDAF2AF5 /* AFNetworkReachabilityManager.m in Sources */,
+				00EC41063E8A9ABFC08067EE /* AFSecurityPolicy.m in Sources */,
+				4E42627A450ED01188573D39 /* AFURLConnectionOperation.m in Sources */,
+				7172B3F522FBED28EF829E0C /* AFURLRequestSerialization.m in Sources */,
+				1EE439DE4FA78CA7753CFB2B /* AFURLResponseSerialization.m in Sources */,
+				3304ACCD6A7E298A0C7C0B5F /* AFURLSessionManager.m in Sources */,
+				A6460A4FBA0686AB075C0A7B /* Pods-TyphoonRestClientDemoSwift-AFNetworking-dummy.m in Sources */,
+				D285C393CD93F20E71A5953B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				B99479E4E7E2EC953349F2D4 /* UIAlertView+AFNetworking.m in Sources */,
+				3FADE7A94D9F5BE790EEB103 /* UIButton+AFNetworking.m in Sources */,
+				DE875E16920898627E9DE689 /* UIImageView+AFNetworking.m in Sources */,
+				34A43FBA61B3787FB9FE9944 /* UIProgressView+AFNetworking.m in Sources */,
+				9E46DDCCD1610F73DEBBF764 /* UIRefreshControl+AFNetworking.m in Sources */,
+				5AA70D1C32D0B7BD6DEAA022 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BF9000371AC4B8BBEC925EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+			target = 0C7A076885DB73BD4B4BCA4E /* Pods-TyphoonRestClientDemoSwift-AFNetworking */;
+			targetProxy = 980E4675C16B8096E47075D7 /* PBXContainerItemProxy */;
+		};
+		A24F20101F74EEADEB52A697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TyphoonRestClientDemoSwift-AFNetworking";
+			target = 0C7A076885DB73BD4B4BCA4E /* Pods-TyphoonRestClientDemoSwift-AFNetworking */;
+			targetProxy = 93D5CE8553488CA4E3C8EA6B /* PBXContainerItemProxy */;
+		};
+		B26A9D1E31934409AFE83158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient";
+			target = 7C771A811CD80B31515C800E /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient */;
+			targetProxy = 2956751453E24516242E9970 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		019580A0A609BE312D336E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76ABCD188E07B23823015E6C /* Pods-TyphoonRestClientDemoSwift.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60853071BDCD83BEC36AD3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8B329A03CB383550CE063F /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TyphoonRestClientDemoSwift-TyphoonRestClient/Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6D24AD4DE49B2B342CFC68FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7B985654EF052FADEE973A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3926120F0A00F4809C1011F3 /* Pods-TyphoonRestClientDemoSwift.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AD5FCE9720AB677D8E855C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889A83226072DC253AB24E0D /* Pods-TyphoonRestClientDemoSwift-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TyphoonRestClientDemoSwift-AFNetworking/Pods-TyphoonRestClientDemoSwift-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3FD69B9CC0C8D8A14E0A0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8B329A03CB383550CE063F /* Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TyphoonRestClientDemoSwift-TyphoonRestClient/Pods-TyphoonRestClientDemoSwift-TyphoonRestClient-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ECF8394E5339405923E4715E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889A83226072DC253AB24E0D /* Pods-TyphoonRestClientDemoSwift-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TyphoonRestClientDemoSwift-AFNetworking/Pods-TyphoonRestClientDemoSwift-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FEDD0B87AA8886144DB36BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD93436479B815D632CB549F /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF8394E5339405923E4715E /* Debug */,
+				AD5FCE9720AB677D8E855C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC233534F943F54CDC761FB /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019580A0A609BE312D336E62 /* Debug */,
+				7B985654EF052FADEE973A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A0615143D2ABFDF5372848 /* Build configuration list for PBXNativeTarget "Pods-TyphoonRestClientDemoSwift-TyphoonRestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FD69B9CC0C8D8A14E0A0C7 /* Debug */,
+				60853071BDCD83BEC36AD3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED61DE14DACB07C47A83858 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D24AD4DE49B2B342CFC68FB /* Debug */,
+				FEDD0B87AA8886144DB36BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C120F2BF264C40FF80ACA61 /* Project object */;
+}
